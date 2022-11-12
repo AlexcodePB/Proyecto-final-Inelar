@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+/* estilos en los textos */
+h1{font-size: 3.5em;}
+
+h2{font-size: 2.5em;}
+
+h3{font-size: 2em;}
+
+p{font-size: 1em;}
+
+#header .nav a{
+    font-size: 0.85em;
+    padding: 3px 6px;
+
+    text-decoration: none;
+    color: orange;
+}
+ /* estilo de los botones */
+button:hover{
+    background-color: rgb(190, 124, 0);
+}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding:10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.501);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.501);
+    color: white;
+    background-color: orange;
+}
+
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* estilos del header */
+
+#header {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#header .container{
+    padding: 3px;
+
+}
+
+/* estilos del logo */
+
+#header .container .logo img{
+    height: 34px;
+}
+
+#header .container .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 4px;
+}
+
+#header .container .logo a{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: orange;
+}
+
+#header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* estilos del nav */
+
+#header .nav{
+    font-weight: 600;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#header .nav a:hover{
+    color: black;
+}
+
+/* estilos de hero */
+
+#hero .container{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url("../img/hero.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;    
+}
+
+#hero .container h1{
+    color: white;
+}
+
+#hero .info{
+    padding: 23px;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+#hero .info h3{
+    margin: 20px;
+    width: max-content;
+}
+
+#hero .info p{
+    margin: 20px;
+    width: fit-content;
+    text-align:left ;
+}
+
+#hero .img-info{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url("../img/sci-extincion-manguera.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;  
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    align-items: center;
+    justify-content: left;
+    font-size: 0.6em;
+    gap: 8px;
+    
+}
+#footer .contactanos{
+    text-align:center;
+    font-size: 0.6em;
+}
+
+#footer .footer-links{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 3px;
+}
+
+#hero .img-info h2{
+    width:500px;
+    height: fit-content;
+    color: aliceblue;
+    text-align: left;
+    display: flex;
+    justify-content: right;
+}
+
+#footer a{
+    color: black;
+}
+#footer a:hover{
+    color: blueviolet;
+}
+
+/* nosotros */
+#contenido-nosotros .container{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-color: aqua;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url("../img/formacion-planificación-de-obra-\(pmp\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;   
+}
+
+/* texto en imagen de nosotros*/
+
+#contenido-nosotros .container h3{
+    width: fit-content;
+    height:fit-content;
+    padding: 12px 45px;
+}
+
+#contenido-nosotros .nosotros{
+    display: flex;
+    flex-direction: row;
+}
+
+#contenido-nosotros .nosotros .texto-centrado{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#contenido-nosotros .nosotros .texto{
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+}
+
+#contenido-nosotros .nosotros .texto p{
+    width:25vw;
+    margin: 23px;
+}
+
+/* estilos de obras */
+
+#obras .container{
+    width: auto;
+    height: 80vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url(../img/obrasPlanificacion.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#obras .container .texto{
+    padding: 20%;
+    height: fit-content;
+    color: white;
+    text-align:center;
+}
+
+/* cartas */
+
+#cartas{
+    padding: 5%;
+    margin-top: 74px;
+    display: flex;
+    flex-direction: column;
+    gap: 59px;
+}
+
+#cartas .obra{
+    width: auto;
+    height: auto;
+    border: 3px solid rgb(155, 151, 151);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+#cartas .texto-obras{
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+#cartas img{
+    padding: 23px;
+    width: 450px;
+    height: 320px;
+}
+/* productos */
+
+#productos .contenedor{
+    display: flex;
+    flex-direction: row;
+}
+
+#productos .contenedor img{
+    margin: 25px;
+    width: 500px;
+    height: 380px;
+}
+
+#productos .productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 34px;
+}
+
+#productos .contenedor .texto-contenedor{
+    padding-top: 80px;
+    text-align:left;
+    margin: 45px 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#productos .productos img{
+    width: 300px;
+    height: 400px;
+    padding: 25px;
+}
+
+
